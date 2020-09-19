@@ -17,6 +17,7 @@ public class VirtualPetShelter {
     public Collection<VirtualPet> getAllPets() {
         return pets.values();
     }
+
     public void close(VirtualPet pet) {
         pets.remove(pet.getPetName(), pet);
     }

@@ -39,16 +39,16 @@ public class VirtualPetShelterApp {
 
                 System.out.println("Which pet would you like to feed?");
                 String petName = input.nextLine();
-                myVirtualPetShelter.eat();
+                myVirtualPet.eat();
                 System.out.println("Getting fuller!");
-                System.out.println("Hunger = " + myVirtualPetShelter.getHungerLevel());
+                System.out.println("Hunger = " + myVirtualPet.getHungerLevel());
 
             }else if(userChoice.equals("2")){
-                System.out.println("You want to a pet a drink");
+                System.out.println("You want to give a pet a drink");
                 System.out.println("Here are our pets");
                 myVirtualPetShelter.showPets();
 
-                System.out.println("Which pet would you like to give a drink?");
+                System.out.println("Which pet would you like to give a drink to?");
                 String petName = input.nextLine();
                 myVirtualPetShelter.drink();
                 System.out.println("mmmm... milk, my favorite!");

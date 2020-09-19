@@ -29,10 +29,15 @@ public class VirtualPet {
         return playLevel;
     }
 
+    public void withdrawal(int amountToWithdrawal) {
+        balance -=amountToWithdrawal;
+    }
+    public void deposit(int amountToDeposit) {
+        balance +=balance;
+    }
     public void eat(){
         hungerLevel -= 10;
     }
-
     public void drink(){
         thirstLevel -= 10;
     }
@@ -44,22 +49,12 @@ public class VirtualPet {
         thirstLevel -= 7;
         playLevel -= 8;
     }
-
     public VirtualPet(String petName, String petDescription, int hungerLevel, int thirstLevel, int playLevel) {
         this.petName = petName;
         this.petDescription = petDescription;
         this.hungerLevel = hungerLevel;
         this.thirstLevel = thirstLevel;
         this.playLevel = playLevel;
-    }
-
-    public void withdrawal(int amountToWithdrawal) {
-        balance -=amountToWithdrawal;
-    }
-
-
-    public void deposit(int amountToDeposit) {
-        balance +=balance;
     }
 }
 
